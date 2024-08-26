@@ -8,9 +8,9 @@ echo ""
 
 docker network create ecosystem
 
-docker-compose --env-file .env -f docker-compose_x86.yaml down
-docker-compose --env-file .env -f docker-compose_x86.yaml pull
-docker-compose --env-file .env -f docker-compose_x86.yaml up -d 
+docker compose --env-file .env -f docker-compose_x86.yaml down
+docker compose --env-file .env -f docker-compose_x86.yaml pull
+docker compose --env-file .env -f docker-compose_x86.yaml up -d 
 
 echo ""
 echo "ecosystem.Ai services started successfully on x86 platform. Workench is available at http://localhost."
